@@ -3,11 +3,12 @@ import { Button } from '@chakra-ui/react'
 // import  axios   from '../api/axios'
 import useAxiosPrivate from '../hooks/useAxiosPrivate';
 import useRefreshToken from '../hooks/useRefreshToken';
+import DrawerApp from './Drawer';
 
 const SignupForm = () => {
   const refresh = useRefreshToken();
   const axiosPrivate = useAxiosPrivate();
-
+  
   const whoami = async () => {   
     try {
       const response = await axiosPrivate.get('api/auth/whoami',
@@ -25,6 +26,7 @@ const SignupForm = () => {
     <>
     <Button colorScheme="purple" onClick={whoami}>Who Am I</Button>
     <Button colorScheme="purple" onClick={refresh}>Refresh</Button>
+    <DrawerApp/>
     </>
     )
 };

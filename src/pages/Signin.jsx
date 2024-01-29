@@ -31,10 +31,10 @@ function SignInForm() {
   const onClose = () => setIsOpen(false);
   // const signIn = useSignIn();
 
-  useEffect(() => {
-    console.log(auth.login);
-    // navigate(from, {replace: true});       
-  }, [auth.login]);
+  // useEffect(() => {
+  //   console.log(auth.login);
+  //   // navigate(from, {replace: true});       
+  // }, [auth.login]);
 
   const handleSubmit = async(e) => {
     e.preventDefault();
@@ -55,11 +55,11 @@ function SignInForm() {
                 withCredentials: true
               })
                // console.log(response?.data); 
-                console.log(JSON.stringify(response?.headers)); 
+                //console.log(JSON.stringify(response?.headers)); 
                 //const access_token = response?.data?.token?.access;
-                const accessToken = ""; 
-                console.log(accessToken);
-                setAuth({ login, password, accessToken});    
+                //const accessToken = ""; 
+                //console.log(accessToken);
+                setAuth({ login, password});    
                 setLogin('');
                 setPassword('');
                 // console.log(response?.data?.headers); 

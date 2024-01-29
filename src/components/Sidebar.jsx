@@ -29,12 +29,12 @@ export default function Sidebar() {
                 Test
             </NavLink>                   
         </ListItem>
-        <ListItem>
+        {/* <ListItem>
             <NavLink to="/drop">
                 <ListIcon as={AtSignIcon} color="white"/>
                 Drop
             </NavLink>                   
-        </ListItem>
+        </ListItem> */}
     </List>
   )
 }

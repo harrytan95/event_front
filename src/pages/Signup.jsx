@@ -160,7 +160,7 @@ const Signup = () => {
           </CardBody>
           <Box height="100px">                    
                 <FormLabel pl="5">Already registered?</FormLabel>
-                <Link to="/login">
+                <Link to="/signin">
                     <Button mt="0" variant="ghost" colorScheme="purple" p="5">Sign In</Button>
                 </Link>           
           </Box>
